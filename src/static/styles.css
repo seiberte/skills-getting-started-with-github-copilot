@@ -74,6 +74,76 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #d8e0e8;
+}
+
+.participants-heading {
+  margin-bottom: 8px;
+  color: #3f5a70;
+  font-size: 0.85rem;
+}
+
+.participants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 6px 5px 10px;
+  color: #3d4b56;
+  background-color: #fff;
+  border: 1px solid #e1e6e9;
+  border-left: 3px solid #328a6b;
+  border-radius: 4px;
+}
+
+.participant-item span {
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: grid;
+  flex: 0 0 32px;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: #64747f;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.remove-participant:hover {
+  color: #b42318;
+  background-color: #ffebee;
+}
+
+.remove-participant:focus-visible {
+  outline: 2px solid #328a6b;
+  outline-offset: 2px;
+}
+
+.remove-participant svg {
+  width: 16px;
+  height: 16px;
+}
+
+.participants-list .empty-state {
+  padding: 4px 0;
+  color: #777;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
